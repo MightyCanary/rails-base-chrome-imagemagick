@@ -1,10 +1,10 @@
 #
-ARG RUBY_VERSION=2.6.6
+ARG RUBY_VERSION=2.7.2
 FROM ruby:$RUBY_VERSION-slim-buster as builder
 
-ARG PG_MAJOR=12
-ARG NODE_MAJOR=10
-ARG YARN_VERSION=1.22.4
+ARG PG_MAJOR=13
+ARG NODE_MAJOR=15
+ARG YARN_VERSION=1.22.10
 
 # Common build dependencies
 RUN apt-get update -qq \
